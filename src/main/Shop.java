@@ -376,6 +376,8 @@ public class Shop {
 				myWriter.close();
 
 				System.out.println("Stock del producto actualizado con éxito en el inventario.");
+
+
 			} else {
 				System.out.println("Error: Archivo de inventario no encontrado.");
 			}

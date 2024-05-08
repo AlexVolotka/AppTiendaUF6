@@ -145,7 +145,7 @@ public class ProductView extends JDialog {
             case 3:
                 shop.productStock(name, stock);
                 if (stockNotExists) {
-                    JOptionPane.showMessageDialog(this, "Producto no Existe", "Éxito", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Producto no Existe", "Error", JOptionPane.ERROR_MESSAGE);
                 } else {
                     JOptionPane.showMessageDialog(this, "Stock del producto actualizado con éxito en el inventario.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
                     dispose();
