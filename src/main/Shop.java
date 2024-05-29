@@ -593,15 +593,15 @@ public class Shop {
 					myWriter.write(line + "\n");
 				}
 				myWriter.close();
-
 				System.out.println("El producto fue eliminado con éxito del inventario.");
+
 			} else {
 				System.out.println("Error: Archivo de inventario no encontrado.");
 			}
+
 		} catch (IOException e) {
-			System.out.println("Ocurrió un error al borrar el producto del inventario.");
-			ProductView productView = new ProductView();
-			productView.setExeption(true);
+			System.out.println("Ocurró un error al borrar el producto del inventario.");
+
 		}
 	}
 

@@ -146,6 +146,7 @@ public class ProductView extends JDialog {
                 shop.productStock(name, stock);
                 if (stockNotExists) {
                     JOptionPane.showMessageDialog(this, "Producto no Existe", "Error", JOptionPane.ERROR_MESSAGE);
+                    stockNotExists = false;
                 } else {
                     JOptionPane.showMessageDialog(this, "Stock del producto actualizado con éxito en el inventario.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
                     dispose();
@@ -154,10 +155,11 @@ public class ProductView extends JDialog {
             case 4:
                 shop.delForProductView(name);
                 if (productsNotExists) {
-                    JOptionPane.showMessageDialog(this, "Producto no Existe", "Éxito", JOptionPane.ERROR_MESSAGE);
-                } else {
                     JOptionPane.showMessageDialog(this, "El Producto Fue Eliminado Con Exito", "Éxito", JOptionPane.INFORMATION_MESSAGE);
                     dispose();
+                } else {
+                    JOptionPane.showMessageDialog(this, "Producto no Existe", "Éxito", JOptionPane.ERROR_MESSAGE);
+                    productsNotExists = false;
                 }
                 // Lógica para eliminar el producto
                 break;
