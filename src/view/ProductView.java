@@ -103,6 +103,8 @@ public class ProductView extends JDialog {
         String priceText = priceProductTextField.getText();
         String stockText = stockProductTextField.getText();
 
+
+
         // Verificar campos requeridos según la opción seleccionada
         if ((publicOption == 2 && (name.isEmpty() || priceText.isEmpty() || stockText.isEmpty())) ||
                 (publicOption == 3 && (name.isEmpty() || stockText.isEmpty())) ||
@@ -119,6 +121,8 @@ public class ProductView extends JDialog {
             // Convertir a double solo si el campo de precio no está vacío y la opción es 2
             if (!priceText.isEmpty() && publicOption == 2) {
                 price = Double.parseDouble(priceText);
+                stock = Integer.parseInt(stockText);
+
             }
             if (!stockText.isEmpty() && publicOption == 3) {
                 stock = Integer.parseInt(stockText);

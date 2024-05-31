@@ -5,6 +5,7 @@ import model.Client;
 import model.Employee;
 import model.Product;
 import model.Sale;
+import view.InventoryView;
 import view.ProductView;
 
 import javax.swing.*;
@@ -128,6 +129,15 @@ public class Shop {
 				System.out.println(product);
 			}
 		}
+	}
+
+	public void showInventoryDialog() {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				InventoryView inventoryView = new InventoryView();
+				inventoryView.setVisible(true);
+			}
+		});
 	}
 	/**
 	 * load initial inventory to shop
@@ -332,9 +342,9 @@ public class Shop {
 			System.out.println("Ocurrió un error al agregar el producto al inventario.");
 		} catch (Exception ex) {
 			// Mostrar mensaje de error usando JOptionPane
-			ex.printStackTrace();
 			ProductView productView = new ProductView();
 			productView.setExeption(true);
+			ex.printStackTrace();
 		}
 	}
 
@@ -376,8 +386,6 @@ public class Shop {
 				myWriter.close();
 
 				System.out.println("Stock del producto actualizado con éxito en el inventario.");
-
-
 			} else {
 				System.out.println("Error: Archivo de inventario no encontrado.");
 			}
@@ -594,7 +602,6 @@ public class Shop {
 				}
 				myWriter.close();
 				System.out.println("El producto fue eliminado con éxito del inventario.");
-
 			} else {
 				System.out.println("Error: Archivo de inventario no encontrado.");
 			}
@@ -604,6 +611,7 @@ public class Shop {
 
 		}
 	}
+
 
 
 	// method delete product.

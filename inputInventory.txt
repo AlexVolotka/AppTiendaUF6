@@ -1,2 +1,13 @@
 Product:Manzana;Wholesaler Price:10.0;Stock:10;
 Product:Pera;Wholesaler Price:20.0;Stock:20;
+Product:Pedro;Wholesaler Price:25.0;Stock:2;
+Product:a;Wholesaler Price:2.0;Stock:24;
+Product:Limalaya;Wholesaler Price:22.0;Stock:0;
+Product:a4;Wholesaler Price:44.0;Stock:2;
+Product:a222;Wholesaler Price:22.0;Stock:0;
+Product:el pepe;Wholesaler Price:2.0;Stock:0;
+Product:porucna;Wholesaler Price:2.0;Stock:0;
+Product:abueno;Wholesaler Price:2.0;Stock:0;
+Product:nombre;Wholesaler Price:2.0;Stock:0;
+Product:ajajajqa;Wholesaler Price:2.0;Stock:0;
+Product:ajajasdghfkjdsahlkgfj;Wholesaler Price:1.0;Stock:2;
